@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Playfair Display', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-editorial: 'Newsreader', Georgia, serif;
+    --font-script: 'Caveat', cursive;
+  }
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.font-sans {
+  font-family: var(--font-sans);
+}
+
+.font-editorial {
+  font-family: var(--font-editorial);
+}
+
+.font-script {
+  font-family: var(--font-script);
+}
+
+/* Custom editorial aesthetics & paper textures for Baby Pink & White theme */
+.bg-warm-canvas {
+  background-color: #fff5f7;
+}
+
+.bg-dark-canvas {
+  background-color: #fff0f4;
+}
+
+.bg-dark-surface {
+  background-color: #ffffff;
+}
+
+.border-warm {
+  border-color: rgba(244, 114, 182, 0.35);
+}
+
+.accent-amber {
+  color: #db2777;
+}
+
+.bg-accent-amber {
+  background-color: #f472b6;
+}
+
+/* Halftone / dotted accent pattern */
+.dot-pattern {
+  background-image: radial-gradient(rgba(244, 114, 182, 0.25) 1.5px, transparent 1.5px);
+  background-size: 16px 16px;
+}
+
+.dot-pattern-light {
+  background-image: radial-gradient(rgba(219, 39, 119, 0.15) 1.5px, transparent 1.5px);
+  background-size: 16px 16px;
+}
+
+.press-badge {
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff5f7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fbcfe8;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f472b6;
+}
